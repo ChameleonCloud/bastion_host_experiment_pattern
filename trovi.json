@@ -1,0 +1,49 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "actionApplication": [
+                {
+                    "@id": "#ChameleonJupyterLab"
+                }
+            ],
+            "author": [
+                {
+                    "@id": "#author_0"
+                }
+            ],
+            "datePublished": "2025-06-17T17:22:20+00:00",
+            "description": "Trovi artifact that benchmarks CPU-only large language model inference on a single Chameleon instance, either a bare metal node or a virtual machine. The notebook launches an Ubuntu 24.04 instance, builds llama.cpp from source, and downloads a small quantized model. It then uses llama-bench to measure tokens per second across a sweep of thread counts sized to the instance. Results are downloaded and plotted in the notebook.",
+            "disambiguatingDescription": "Benchmark CPU LLM inference scaling with llama.cpp on a bare metal or VM instance",
+            "keywords": "example",
+            "name": "CPU LLM Inference Scaling with llama.cpp"
+        },
+        {
+            "@id": "trovi.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "#author_0",
+            "@type": "Person",
+            "affiliation": "University of Chicago",
+            "email": "markpowers@uchicago.edu",
+            "name": "Mark Powers"
+        },
+        {
+            "@id": "#ChameleonJupyterLab",
+            "@type": "SoftwareApplication",
+            "name": "Chameleon JupyterLab",
+            "trovi_arguments": "{}",
+            "trovi_type": "jupyterhub",
+            "url": "https://jupyter.chameleoncloud.org/"
+        }
+    ]
+}
