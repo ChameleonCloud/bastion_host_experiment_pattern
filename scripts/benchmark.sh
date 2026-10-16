@@ -46,7 +46,7 @@ cat > "${OUT}/meta.json" << META
   "physical_cores": ${PHYSICAL},
   "mem_total_kb": $(awk '/MemTotal/ {print $2}' /proc/meminfo),
   "kernel": "$(uname -r)",
-  "llama_cpp_tag": "${LLAMA_CPP_TAG}",
+  "llama_cpp_tag": "${REPO_REF}",
   "model": "$(basename "${MODEL_PATH}")",
   "threads": "${THREADS}",
   "n_prompt": ${N_PROMPT},
