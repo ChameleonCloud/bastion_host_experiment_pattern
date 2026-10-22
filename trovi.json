@@ -15,10 +15,10 @@
                 }
             ],
             "datePublished": "2025-06-17T17:22:20+00:00",
-            "description": "Trovi artifact that benchmarks CPU-only large language model inference on a single Chameleon instance, either a bare metal node or a virtual machine. The notebook launches an Ubuntu 24.04 instance, builds llama.cpp from source, and downloads a small quantized model. It then uses llama-bench to measure tokens per second across a sweep of thread counts sized to the instance. Results are downloaded and plotted in the notebook.",
-            "disambiguatingDescription": "Benchmark CPU LLM inference scaling with llama.cpp on a bare metal or VM instance",
+            "description": "Trovi artifact that sets up a group of bare metal worker nodes behind a single public IP address. The notebook reserves the workers, a small VM to act as an SSH bastion host, and one floating IP at CHI@TACC. It launches Ubuntu 24.04 on every instance, attaches the floating IP and an SSH security group to the bastion VM, and connects to each worker's private IP through the bastion host as an SSH jump host. The workers have no floating IP, so they can't be reached from the internet.",
+            "disambiguatingDescription": "Reach bare metal worker nodes through a VM bastion host using a single floating IP",
             "keywords": "example",
-            "name": "CPU LLM Inference Scaling with llama.cpp"
+            "name": "Experimenting Securely and Efficiently Using an SSH Bastion Host"
         },
         {
             "@id": "trovi.json",

@@ -2,5 +2,3 @@ python-chi>=1.2.10
 git+https://github.com/ChameleonCloud/python-blazarclient
 git+https://github.com/ChameleonCloud/ccauth.git
 ipykernel
-matplotlib
-pandas
